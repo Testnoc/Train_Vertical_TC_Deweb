@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30616" started-at="2020-03-14T10:09:00Z" finished-at="2020-03-14T10:09:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30616" started-at="2020-03-14T10:09:00Z" finished-at="2020-03-14T10:09:31Z">
+      <class name="ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="beforeClass" is-config="true" duration-ms="18800" started-at="2020-03-14T10:09:00Z" finished-at="2020-03-14T10:09:19Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Train_SRP_Page()[pri:0, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="Train_SRP_Page" duration-ms="134" started-at="2020-03-14T10:09:19Z" finished-at="2020-03-14T10:09:19Z">
+        </test-method> <!-- Train_SRP_Page -->
+        <test-method status="PASS" signature="Train_Review_page()[pri:1, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="Train_Review_page" duration-ms="2877" started-at="2020-03-14T10:09:19Z" finished-at="2020-03-14T10:09:22Z">
+        </test-method> <!-- Train_Review_page -->
+        <test-method status="PASS" signature="Train_offers_page()[pri:2, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="Train_offers_page" duration-ms="610" started-at="2020-03-14T10:09:22Z" finished-at="2020-03-14T10:09:22Z">
+        </test-method> <!-- Train_offers_page -->
+        <test-method status="PASS" signature="payment_page()[pri:3, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="payment_page" duration-ms="5803" started-at="2020-03-14T10:09:22Z" finished-at="2020-03-14T10:09:28Z">
+        </test-method> <!-- payment_page -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical@402a079c]" name="afterClass" is-config="true" duration-ms="2365" started-at="2020-03-14T10:09:28Z" finished-at="2020-03-14T10:09:31Z">
+        </test-method> <!-- afterClass -->
+      </class> <!-- ProjectTrain.Goibibo_Train_Vertical.Goibibo_Train_Vertical -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

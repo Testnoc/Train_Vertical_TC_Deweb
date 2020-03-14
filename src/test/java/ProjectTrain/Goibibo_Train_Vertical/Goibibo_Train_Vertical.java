@@ -18,6 +18,8 @@ public class Goibibo_Train_Vertical {
 
 	String IRCTC_User_details_Popup = "//*[@id=\"exampleInputPassword1\"]";
 	
+	String Click_on_add = "//div[@class='width90 pad10 fl button blue marginTB10 marginL10']";
+	
 	String Proceed_button = "//*[@id=\"irctcPop\"]/div/div/div[1]/div[2]/button";
 	
 	String Gender_choice = "/html/body/div[1]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[2]/div/div[1]/div[1]/select/option[2]",  name = "/html/body/div[1]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[2]/div/div[1]/div[2]/input",
@@ -47,15 +49,8 @@ public class Goibibo_Train_Vertical {
   }
   
   
+
   @Test(priority=1)
-  public void IRCTC_User_Details_POPup() {
-	  
-	  driver.findElement(By.xpath(IRCTC_User_details_Popup)).sendKeys("devg");
-	  
-	  driver.findElement(By.xpath(Proceed_button)).click();
-  }
-  
-  @Test(priority=2)
   public void Train_Review_page() throws InterruptedException {
 	  
 	  driver.findElement(By.xpath(Gender_choice)).click();
@@ -63,6 +58,14 @@ public class Goibibo_Train_Vertical {
 	  driver.findElement(By.xpath(name)).sendKeys("Test");
 	  
 	  driver.findElement(By.xpath(age)).sendKeys("33");
+	  
+	  
+	  
+	  driver.findElement(By.xpath(Click_on_add)).click();
+	  
+	  driver.findElement(By.xpath(IRCTC_User_details_Popup)).sendKeys("devg");
+	  
+	  driver.findElement(By.xpath(Proceed_button)).click();
 	  
 	  driver.findElement(By.xpath(email)).sendKeys("testnoc009@gmail.com");
 	  
@@ -73,7 +76,7 @@ public class Goibibo_Train_Vertical {
   }
   
   
-  @Test(priority=3)
+  @Test(priority=2)
   
   public void Train_offers_page() {
 	  
@@ -83,7 +86,7 @@ public class Goibibo_Train_Vertical {
 	  
   }
   
-  @Test(priority=4)
+  @Test(priority=3)
   
   public void payment_page() throws InterruptedException {
 	  
@@ -102,6 +105,8 @@ public class Goibibo_Train_Vertical {
   	  System.setProperty("webdriver.chrome.driver", "D:\\Eclips backup\\Jar Files for use in selenium\\chromedriver.exe");
   	  driver = new ChromeDriver();
   	  driver.manage().deleteAllCookies();
+  	  
+  	
   	  
   	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   	
